@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <header>
+        {% include 'nav.html' %}
+    </header>
+    {% if title == "Home" %}
+    <div class="hero">
+        <h1>Hi, I am Sam</h1>
+    </div>
+    {% endif %}
+    <div class="wrapper">
+         {{ content | safe }}
+    </div>
+</body>
+</html>
